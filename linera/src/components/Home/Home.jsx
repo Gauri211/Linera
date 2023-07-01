@@ -9,15 +9,15 @@ const Home = () => {
         <Navbar />
         <motion.div 
             className='flex justify-between'
-            initial={{ opacity: 0, x: -20 }}
+            initial={{ opacity: 0, x: -40 }}
             animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 4 }}
+            transition={{ duration: 5 }}
         >
             <div className="mt-[12%]">
                 <h1 class="text-5xl font-bold tracking-wider">
                     Dummy Heading
                 </h1>
-                <p className='pt-[20px] w-[550px] text-left ml-[100px]'>
+                <p className='pt-[20px] w-[550px] text-left ml-[100px] text-[18px]'>
                     Lorem ipsum dolor sit amet consectetur adipisicing 
                     elit. Quia, quae a? Aspernatur, natus. Eveniet vero 
                     ipsum nostrum tempora quaerat dolorum. Tempore aspernatur 
@@ -27,9 +27,6 @@ const Home = () => {
                     <button className='bg-sky-950 p-[7px] hover:bg-sky-500'>Get Started</button>
                 </div>
             </div>
-            {/* <div>
-                hello
-            </div> */}
         </motion.div>
         <StarsCanvas />
     </div>
