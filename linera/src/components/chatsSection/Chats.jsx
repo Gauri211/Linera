@@ -3,10 +3,14 @@ import search from '../../images/search.png'
 import avatar from '../../images/avatar.png'
 import Message from './Message'
 import Media from './Media'
+import Navbar from '../Navbar'
 
 export default function Chats() {
   return (
-    <div className="bg-[#090536] h-screen w-full flex">
+    <div className='bg-[#090536]'>
+    <Navbar />
+        <hr className="bg-[#8A8787] opacity-25"/>
+    <div className=" h-screen w-full flex">
         <div className='p-4 w-[20rem]'>
             <div className='flex justify-between'>
                 <input type="text" placeholder='search' className='rounded-[20px] bg-[#ffffff] border-gray-300 text-gray-900 p-1 px-2'/>
@@ -24,6 +28,7 @@ export default function Chats() {
         </div>
         <Message />
         <Media />
+    </div>
     </div>
   )
 }
