@@ -1,12 +1,18 @@
 import React from 'react'
 import StarsCanvas from '../canvas/Stars'
 import Navbar from '../Navbar'
+import { motion } from 'framer-motion';
 
 const Home = () => {
   return (
     <div>
         <Navbar />
-        <div className='flex justify-between'>
+        <motion.div 
+            className='flex justify-between'
+            initial={{ opacity: 0, x: -20 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 4 }}
+        >
             <div className="mt-[12%]">
                 <h1 class="text-5xl font-bold tracking-wider">
                     Dummy Heading
@@ -24,7 +30,7 @@ const Home = () => {
             {/* <div>
                 hello
             </div> */}
-        </div>
+        </motion.div>
         <StarsCanvas />
     </div>
   )
