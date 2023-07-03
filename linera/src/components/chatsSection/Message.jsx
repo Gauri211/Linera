@@ -6,7 +6,7 @@ import send from '../../images/send.png'
 
 export default function Message() {
   return (
-    <div className='w-[40rem] p-4 flex flex-col place-content-between'>
+    <div className='w-[40rem] p-4 flex flex-col place-content-between border-r-2 border-[#8A8787] h-screen'>
         <div className='bg-[#ffffff] flex p-1 justify-between items-center'>
             <img src={avatar} alt="avatar" className='w-[50px] h-[50px] rounded-full'/>
             <span className='text-black text-2xl'>John Smith</span>
